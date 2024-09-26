@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nanan Micheladas</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Deliciosas Micheladas en NananMicheladas.">
+    <meta name="keywords" content="micheladas, bebidas, frutos rojos">
+    
+    <style>
+        .michelada-name {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .frutos-rojos {
+            color: red
+        }
+        .blueberry {
+            color: blue
+        }
+        .fruto-verde {
+            color: #33FF57;
+        }
+        .fruto-amarillo {
+            color: #FFEB33; 
+        }
+        .tamarindo {
+            color: chocolate
+        }
+        .soda {
+            color: coral;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-bar"></div>
+    <div class="d-flex justify-content-center my-4">
+        <img src="bebidas/logotipo.jpg" alt="Logotipo de Nanan Micheladas" class="img-fluid logo">
+    </div>
+
+    <nav class="text-center">
+        <h1 class="gradient-text"></h1>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a class="btn btn-black" href="Quienes-somos.html">Quiénes Somos</a></li>
+            <li class="list-inline-item"><a class="btn btn-black" href="javascript:void(0);" onclick="mostrarProductos()">Productos</a></li>
+            <li class="list-inline-item"><a class="btn btn-black" href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <div id="productos" class="container my-4 mb-3" style="display: none;">
+        <h2 class="text-center">Nuestras Micheladas</h2>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <img src="bebidas/frutos rojos.jpg" class="img-fluid" alt="Michelada de frutos rojos">
+                <h3 class="michelada-name frutos-rojos">Frutos Rojos</h3>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="bebidas/blue berry.jpg" class="img-fluid" alt="Michelada de blueberry">
+                <h3 class="michelada-name blueberry">Blueberry</h3>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="bebidas/fruto verde.jpg" class="img-fluid" alt="Michelada de Fruto verde">
+                <h3 class="michelada-name fruto-verde">Fruto Verde</h3>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="bebidas/fruto amarillo.jpg" class="img-fluid" alt="Michelada de fruto amarillo">
+                <h3 class="michelada-name fruto-amarillo">Fruto Amarillo</h3>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="bebidas/tamarindo.jpg" class="img-fluid" alt="Michelada de Tamarindo">
+                <h3 class="michelada-name tamarindo">Tamarindo</h3>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="bebidas/soda.jpg" class="img-fluid" alt="Michelada de Soda">
+                <h3 class="michelada-name soda">Soda</h3>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center mt-4">
+        <p>&copy; 2024 Nanan Micheladas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
+    <script>
+        function mostrarProductos() {
+            document.getElementById('productos').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
